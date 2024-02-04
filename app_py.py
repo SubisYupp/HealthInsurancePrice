@@ -34,7 +34,20 @@ regr = LinearRegression()
 regr.fit(X_train, Y_train)
 
 # Streamlit App
-st.title("Health Insurance Cost Prediction")
+st.markdown(
+    """
+    <style>
+        .title-container {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.title("Health Insurance Cost Prediction", unsafe_allow_html=True, key="title-container")
 
 # User Input
 st.sidebar.header("User Input Features")

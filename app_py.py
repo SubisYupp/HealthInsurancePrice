@@ -47,7 +47,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.title("Health Insurance Cost Prediction", unsafe_allow_html=True, key="title-container")
+st.markdown('<h1 class="title-container">Health Insurance Cost Prediction</h1>', unsafe_allow_html=True)
 
 # User Input
 st.sidebar.header("User Input Features")

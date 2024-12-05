@@ -13,8 +13,6 @@ import streamlit as st
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
-pip install --upgrade pip
-
 # Load the dataset
 df = pd.read_csv("insurance.csv")
 
